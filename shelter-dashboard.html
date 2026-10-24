@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter Dashboard | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Happy Paws Shelter | </span>
+            <a href="shelter-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="shelter-dashboard.html">Dashboard</a></li>
+                <li><a href="#animals">List Animals</a></li>
+                <li><a href="shelter-apps.html">Applications</a></li>
+                <li><a href="shelter-foster.html">Foster Homes</a></li>
+                <li><a href="shelter-manage.html#medical">Medical Logs</a></li>
+                <li><a href="#intake">Intake & Outcomes</a></li>
+                <li><a href="shelter-manage.html#donations">Donations</a></li>
+                <li><a href="shelter-manage.html#profile">Public Profile</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 700px; margin: 0 10px;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Shelter Dashboard</h1>
+
+            
+            <section id="animals">
+                <h2>Animals for Adoption</h2>
+                
+                <article>
+                    <img src="bruno.jpg"  width="100" height="100">
+                    <h3>Bruno (Dog)</h3>
+                    <p>2 Years | Male | Healthy</p>
+                </article>
+                <br>
+                <article>
+                    <img src="mithi cat.jpg"  width="100" height="100">
+                    <h3>Mithi (Cat)</h3>
+                    <p>1 Year | Female | Healthy</p>
+                </article>
+                <br>
+                <button type="button">+ Add New Animal</button>
+            </section>
+
+            <hr>
+
+            
+            <section id="intake">
+                <h2>Intake & Outcome Summary</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Total This Month</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rescued (Intake)</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Adopted (Outcome)</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Currently in Shelter</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Shelter | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Happy Paws Shelter | </span>
+            <a href="shelter-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="shelter-dashboard.html">Dashboard</a></li>
+                <li><a href="shelter-dashboard.html#animals">List Animals</a></li>
+                <li><a href="shelter-apps.html">Applications</a></li>
+                <li><a href="shelter-foster.html">Foster Homes</a></li>
+                <li><a href="#medical">Medical Logs</a></li>
+                <li><a href="shelter-dashboard.html#intake">Intake & Outcomes</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#profile">Public Profile</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 1000px; margin: 0 10px;"></div>
+
+        <main style="flex: 1;">
+            <h1>Records & Public Profile</h1>
+
+            
+            <section id="medical">
+                <h2>Medical Logs</h2>
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Animal</th>
+                            <th>Treatment Given</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05 Oct 2026</td>
+                            <td>Rocky</td>
+                            <td>Rabies Vaccine</td>
+                        </tr>
+                        <tr>
+                            <td>02 Oct 2026</td>
+                            <td>Luna</td>
+                            <td>Deworming</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="donations">
+                <h2>Donation Tracking</h2>
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Donor Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10 Oct 2026</td>
+                            <td>Anonymous</td>
+                            <td>৳5,000</td>
+                        </tr>
+                        <tr>
+                            <td>08 Oct 2026</td>
+                            <td>Rahim Uddin</td>
+                            <td>৳2,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+           
+            <section id="profile">
+                <h2>Edit Public Profile & Success Stories</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Shelter Profile</legend>
+                        
+                        <label for="publicBio">Mission Statement / Bio:</label><br>
+                        <textarea id="publicBio" name="bio" rows="3" cols="40" required>Rescuing, healing, and finding loving homes since 2020.</textarea>
+                        <br><br>
+
+                        <label for="successStory">Add a Success Story (Appears on Public Page):</label><br>
+                        <textarea id="successStory" name="story" rows="3" cols="40" placeholder="e.g. Tommy found his forever home today!"></textarea>
+                        <br><br>
+
+                        <label for="storyPhoto">Upload Photo for Success Story:</label><br>
+                        <input type="file" id="storyPhoto" name="photo" accept="image/*">
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Save Public Profile</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>

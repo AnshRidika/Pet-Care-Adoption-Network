@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foster Homes | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Happy Paws Shelter | </span>
+            <a href="shelter-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="shelter-dashboard.html">Dashboard</a></li>
+                <li><a href="shelter-dashboard.html#animals">List Animals</a></li>
+                <li><a href="shelter-apps.html">Applications</a></li>
+                <li><a href="shelter-foster.html">Foster Homes</a></li>
+                <li><a href="shelter-manage.html#medical">Medical Logs</a></li>
+                <li><a href="shelter-dashboard.html#intake">Intake & Outcomes</a></li>
+                <li><a href="shelter-manage.html#donations">Donations</a></li>
+                <li><a href="shelter-manage.html#profile">Public Profile</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 700px; margin: 0 10px;"></div>
+
+        <main style="flex: 1;">
+            <h1>Foster Home Management</h1>
+
+            
+            <section>
+                <h2>Active Foster Placements</h2>
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Foster Family</th>
+                            <th>Location</th>
+                            <th>Since</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Babu (Dog)</td>
+                            <td>Karim Family</td>
+                            <td>Uttara</td>
+                            <td>01 Oct 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Assign New Foster</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Foster Assignment Form</legend>
+                        
+                        <label for="selectAnimal">Select Animal:</label><br>
+                        <select id="selectAnimal" name="animal" required>
+                            <option value="rocky">Rocky (Dog)</option>
+                            <option value="luna">Luna (Cat)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="fosterName">Foster Family Name:</label><br>
+                        <input type="text" id="fosterName" name="fosterName" required>
+                        <br><br>
+
+                        <label for="fosterLocation">Location:</label><br>
+                        <input type="text" id="fosterLocation" name="location" required>
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Assign to Foster</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>

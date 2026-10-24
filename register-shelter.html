@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter Registration | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <h1>Pet Care & Adoption Network</h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- main contetn-->
+    <main>
+        <section>
+            <h2>Shelter / NGO Registration</h2>
+            <p>Register your organization to list rescued animals for adoption and manage donations.</p>
+
+            
+            <form action="#" method="POST">
+                
+                
+                <fieldset>
+                    <legend>Organization Contact Details</legend>
+                    
+                    <label for="shelterName">Organization Name:</label><br>
+                    <input type="text" id="shelterName" name="orgName" placeholder="e.g. Happy Paws Shelter" required>
+                    <br><br>
+
+                    <label for="shelterEmail">Official Email Address:</label><br>
+                    <input type="email" id="shelterEmail" name="email" placeholder="contact@shelter.com" required>
+                    <br><br>
+
+                    <label for="shelterPhone">Phone Number:</label><br>
+                    <input type="tel" id="shelterPhone" name="phone" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    <label for="shelterPassword">Password:</label><br>
+                    <!-- SLIDE 32: minlength for validation -->
+                    <input type="password" id="shelterPassword" name="password" minlength="6" placeholder="Minimum 6 characters" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Location Details</legend>
+
+                    <label for="shelterAddress">Full Address:</label><br>
+                    
+                    <textarea id="shelterAddress" name="address" rows="4" cols="30" placeholder="Enter shelter address" required></textarea>
+                    <br><br>
+
+                    <label for="shelterCity">City:</label><br>
+                   
+                    <select id="shelterCity" name="city" required>
+                        <option value="" disabled selected>-- Select City --</option>
+                        <option value="dhaka">Dhaka</option>
+                        <option value="chittagong">Chittagong</option>
+                        <option value="sylhet">Sylhet</option>
+                        <option value="rajshahi">Rajshahi</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Verification Documents</legend>
+                    
+                    <label for="shelterReg">NGO / Trade Registration Number:</label><br>
+                    <input type="text" id="shelterReg" name="regNumber" placeholder="Enter official registration number" required>
+                    <br><br>
+
+                    
+                    <label for="shelterDoc">Upload Registration Certificate (PDF):</label><br>
+                    <input type="file" id="shelterDoc" name="certificate" accept=".pdf, image/*" required>
+                    <br><br>
+
+                    <label for="shelterBio">Short Bio / Mission Statement:</label><br>
+                    
+                    <textarea id="shelterBio" name="bio" rows="3" cols="40" placeholder="Tell us about your shelter..." required></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+            <br>
+            <hr>
+            
+            
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+            <p>Want to register a different role? <a href="register.html">Go back</a></p>
+
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
