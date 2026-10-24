@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <!-- TOP NAVBAR -->
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+               
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html#verify">Verifications</a></li>
+                <li><a href="manager-reports.html#subs">Subscriptions</a></li>
+                <li><a href="manager-verify.html#abuse">Abuse Reports</a></li>
+                <li><a href="manager-verify.html#moderation">Moderation</a></li>  
+                <li><a href="#broadcast">Broadcast Alerts</a></li>  
+                <li><a href="manager-reports.html#analytics">Analytics</a></li>
+                <li><a href="manager-reports.html#export">Export Data</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 700px; margin: 0 10px;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Platform Admin Dashboard</h1>
+            <p>Welcome back. Here is the global overview of the platform.</p>
+
+            
+            <section id="broadcast">
+                <h2>Broadcast Emergency Alert</h2>
+                <p>Send an urgent message to all users (Owners, Vets, Shelters).</p>
+                
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Alert Message</legend>
+                        
+                        <label for="alertType">Alert Type:</label><br>
+                        <select id="alertType" name="alertType" required>
+                            <option value="disease">Disease Outbreak</option>
+                            <option value="weather">Severe Weather Warning</option>
+                            <option value="lost">Mass Lost Pet Alert</option>
+                            <option value="system">System Maintenance</option>
+                        </select>
+                        <br><br>
+
+                        <label for="alertMessage">Message:</label><br>
+                        <textarea id="alertMessage" name="message" rows="4" cols="40" placeholder="Type the urgent message here..." required></textarea>
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Send Broadcast Now</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>

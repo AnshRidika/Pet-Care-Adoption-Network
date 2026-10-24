@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification & Moderation | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="#verify">Verifications</a></li>
+                <li><a href="manager-reports.html#subs">Subscriptions</a></li>
+                <li><a href="#abuse">Abuse Reports</a></li>
+                <li><a href="#moderation">Moderation</a></li>
+                <li><a href="manager-dashboard.html#broadcast">Broadcast Alerts</a></li>
+                <li><a href="manager-reports.html#analytics">Analytics</a></li>
+                <li><a href="manager-reports.html#export">Export Data</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 1000px; margin: 0 10px;"></div>
+
+        <main style="flex: 1;">
+            <h1>Verification & Moderation</h1>
+
+            
+            <section id="verify">
+                <h2>Pending Verifications (Vets & Shelters)</h2>
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>License Document</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. Salam</td>
+                            <td>Vet</td>
+                            <!-- The manager clicks this to view the uploaded file -->
+                            <td><a href="#">View Uploaded License</a></td>
+                            <td>
+                                <button type="button">Approve</button>
+                                <button type="button">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paws Rescue</td>
+                            <td>Shelter</td>
+                            <td><a href="#">View NGO Certificate</a></td>
+                            <td>
+                                <button type="button">Approve</button>
+                                <button type="button">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="abuse">
+                <h2>Abuse / Cruelty Reports</h2>
+                <p>Review reports against any user (Owner, Vet, or Shelter) and take action.</p>
+                
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Reported User</th>
+                            <th>Role</th>
+                            <th>Reason</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>User #4021 (Rahim)</td>
+                            <td>Pet Owner</td>
+                            <td>Animal Neglect</td>
+                            <td>
+                                <button type="button">Ban Owner</button>
+                                <button type="button">Dismiss</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fake Vet Clinic</td>
+                            <td>Vet</td>
+                            <td>Fake License / Scam</td>
+                            <td>
+                                <button type="button">Ban Vet</button>
+                                <button type="button">Dismiss</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bad Shelter NGO</td>
+                            <td>Shelter</td>
+                            <td>Mistreating Animals</td>
+                            <td>
+                                <button type="button">Ban Shelter</button>
+                                <button type="button">Dismiss</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="moderation">
+                <h2>Flagged Content (Reviews & Listings)</h2>
+                <p>Remove inappropriate reviews or ban users who leave fake/spam comments.</p>
+                
+                <table border="1" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Content Type</th>
+                            <th>Content Snippet</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Review by User #4021</td>
+                            <td>"This vet is a complete scam and a thief..."</td>
+                            <td>
+                                <button type="button">Remove Review</button>
+                                <button type="button">Ban User</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Listing by Happy Paws</td>
+                            <td>"Free purebred puppies!! Click here to pay deposit..."</td>
+                            <td>
+                                <button type="button">Remove Listing</button>
+                                <button type="button">Ban Shelter</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>
