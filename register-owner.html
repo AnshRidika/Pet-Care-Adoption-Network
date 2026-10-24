@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Registration | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <h1>Pet Care & Adoption Network</h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- main content -->
+    <main>
+        <section>
+            <h2>Pet Owner Registration</h2>
+            <p>Create your account to manage your pets and book appointments.</p>
+
+            
+            <form action="#" method="POST">
+                
+                
+                <fieldset>
+                    <legend>Account Credentials</legend>
+                    
+                    
+                    <label for="ownerName">Full Name:</label><br>
+                    <input type="text" id="ownerName" name="fullName" placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="ownerEmail">Email Address:</label><br>
+                    <input type="email" id="ownerEmail" name="email" placeholder="example@mail.com" required>
+                    <br><br>
+
+                    <label for="ownerPhone">Phone Number:</label><br>
+                    <input type="tel" id="ownerPhone" name="phone" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    
+                    <label for="ownerPassword">Password:</label><br>
+                    <input type="password" id="ownerPassword" name="password" minlength="6" placeholder="Minimum 6 characters" required>
+                    <br><br>
+
+                    
+                    <label>Gender:</label><br>
+                    <input type="radio" id="genderMale" name="gender" value="Male" required>
+                    <label for="genderMale">Male</label>
+                    
+                    <input type="radio" id="genderFemale" name="gender" value="Female">
+                    <label for="genderFemale">Female</label>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Location Details</legend>
+
+                    <label for="ownerAddress">Full Address:</label><br>
+                    
+                    <textarea id="ownerAddress" name="address" rows="4" cols="30" placeholder="Enter your full address" required></textarea>
+                    <br><br>
+
+                    <label for="ownerCity">City:</label><br>
+                    
+                    <select id="ownerCity" name="city" required>
+                        <option value="" disabled selected>-- Select City --</option>
+                        <option value="dhaka">Dhaka</option>
+                        <option value="chittagong">Chittagong</option>
+                        <option value="sylhet">Sylhet</option>
+                        <option value="rajshahi">Rajshahi</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Profile Picture (Optional)</legend>
+                    <label for="ownerPhoto">Upload Profile Photo:</label><br>
+                    <input type="file" id="ownerPhoto" name="profilePic" accept="image/*">
+                </fieldset>
+
+                <br>
+
+                
+                <button type="submit">Create Account</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+            <br>
+            <hr>
+            
+            
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+            <p>Want to register a different role? <a href="register.html">Go back</a></p>
+
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

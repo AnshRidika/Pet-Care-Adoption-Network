@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <div>
+            
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <h1>Pet Care & Adoption Network</h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- main content section -->
+    <main>
+        <section>
+            <h2>Login to Your Account</h2>
+            <p>Please enter your credentials to access your dashboard.</p>
+
+            
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Account Credentials</legend>
+                    
+                    <label for="userEmail">Email Address:</label><br>
+                    <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
+                    <br><br>
+
+                    <label for="userPassword">Password:</label><br>
+                    <input type="password" id="userPassword" name="password" minlength="6" placeholder="Enter your password" required>
+                    <br><br>
+
+                    <label for="userRole">Login As:</label><br>
+                    <select id="userRole" name="role" required>
+                        <option value="" disabled selected>-- Select Role --</option>
+                        <option value="owner">Pet Owner</option>
+                        <option value="vet">Vet / Groomer</option>
+                        <option value="shelter">Shelter / NGO</option>
+                        <option value="manager">Platform Manager</option>
+                    </select>
+                </fieldset>
+
+                <br>
+                
+                <button type="submit">Login</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+            <br>
+
+            
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            <p>Want to browse pets first? <a href="public.html">Visit Public Page</a></p>
+
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

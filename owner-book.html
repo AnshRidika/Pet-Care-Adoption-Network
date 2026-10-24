@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment | Pet Care</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tasnban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-dashboard.html#my-pets">My Pets</a></li>
+                <li><a href="owner-dashboard.html#medical">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-book.html">Find Providers</a></li>
+                <li><a href="owner-tools.html#lost">Lost Pet Alert</a></li>
+                <li><a href="owner-tools.html#adopt">Adopt / Rehome</a></li>
+                <li><a href="owner-tools.html#messages">Messages</a></li>
+                <li><a href="owner-tools.html#reviews">Leave a Review</a></li>
+                <li><a href="donation.html#donation">Donation</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 700px; margin: 0 10px;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Book an Appointment</h1>
+
+            <section id="find">
+                <h2>1. Find a Provider</h2>
+                <form action="#" method="GET">
+                    <label for="searchProvider">Search by name:</label>
+                    <input type="text" id="searchProvider" name="search" placeholder="e.g. Dr. Karim">
+                    <label for="filterService">Service:</label>
+                    <select id="filterService" name="serviceType">
+                        <option value="all">All Services</option>
+                        <option value="vet">Vet</option>
+                        <option value="groomer">Groomer</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <hr>
+
+            <section id="book">
+                <h2>2. Schedule Your Visit</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Appointment Details</legend>
+                        <label for="selectProvider">Select Provider:</label><br>
+                        <select id="selectProvider" name="provider" required>
+                            <option value="karim">Dr. Karim (Vet)</option>
+                            <option value="hub">Pet Grooming Hub</option>
+                        </select><br><br>
+
+                        <label for="selectPet">Select Your Pet:</label><br>
+                        <select id="selectPet" name="pet" required>
+                            <option value="bruno">Bruno (Dog)</option>
+                            <option value="mitu">Mitu (Cat)</option>
+                        </select><br><br>
+
+                        <label for="apptDate">Preferred Date:</label><br>
+                        <input type="date" id="apptDate" name="date" required><br><br>
+
+                        <label for="apptTime">Preferred Time:</label><br>
+                        <input type="time" id="apptTime" name="time" required><br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Confirm Booking</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care Network.</p></footer>
+</body>
+</html>

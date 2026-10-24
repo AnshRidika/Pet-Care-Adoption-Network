@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Messages | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-dashboard.html#my-pets">My Pets</a></li>
+                <li><a href="owner-dashboard.html#medical">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-book.html">Find Providers</a></li>
+                <li><a href="#lost">Lost Pet Alert</a></li>
+                <li><a href="#adopt">Adopt / Rehome</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#reviews">Leave a Review</a></li>
+                <li><a href="donation.html#donation">Donation</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 1400px; margin: 0 10px;"></div>
+
+        <main style="flex: 1;">
+            <h1>Owner Tools</h1>
+
+            
+            <section id="lost">
+                <h2>Post a Lost Pet Alert</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Lost Pet Details</legend>
+                        <label for="lostPetName">Pet Name:</label><br>
+                        <input type="text" id="lostPetName" name="petName" required><br><br>
+                        <label for="lostLocation">Last Seen Location:</label><br>
+                        <input type="text" id="lostLocation" name="location" required><br><br>
+                        <label for="lostPhoto">Upload Recent Photo:</label><br>
+                        <input type="file" id="lostPhoto" name="photo" accept="image/*" required><br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Post Alert</button>
+                </form>
+            </section>
+
+            <hr>
+
+           
+            <section id="adopt">
+                <h2>List a Pet for Adoption</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Adoption Details</legend>
+                        <label for="adoptPetName">Pet Name:</label><br>
+                        <input type="text" id="adoptPetName" name="petName" required><br><br>
+                        <label for="adoptReason">Reason for Rehoming:</label><br>
+                        <textarea id="adoptReason" name="reason" rows="3" cols="30" required></textarea><br><br>
+                        <label for="adoptPhoto">Upload Pet Photo:</label><br>
+                        <input type="file" id="adoptPhoto" name="photo" accept="image/*" required><br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Publish Listing</button>
+                </form>
+            </section>
+
+            <hr>
+
+            
+            <section id="messages">
+                <h2>Send a Message</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Compose Message</legend>
+                        <label for="messageTo">To (Shelter/Vet):</label><br>
+                        <select id="messageTo" name="recipient" required>
+                            <option value="happy_paws">Happy Paws Shelter</option>
+                            <option value="dr_karim">Dr. Karim (Vet)</option>
+                        </select><br><br>
+                        <label for="messageBody">Message:</label><br>
+                        <textarea id="messageBody" name="message" rows="4" cols="40" placeholder="Type your message here..." required></textarea><br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <hr>
+
+           
+            <section id="reviews">
+                <h2>Leave a Review</h2>
+                <p>Rate a Vet or Shelter based on your experience.</p>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Submit Feedback</legend>
+                        
+                        <label for="reviewTarget">Who are you reviewing?</label><br>
+                        <select id="reviewTarget" name="target" required>
+                            <option value="" disabled selected>-- Select Provider --</option>
+                            <option value="vet_karim">Dr. Karim (Vet)</option>
+                            <option value="shelter_happy">Happy Paws Shelter</option>
+                        </select>
+                        <br><br>
+
+                        <label for="rating">Rating (1 to 5):</label><br>
+                        <select id="rating" name="rating" required>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Good</option>
+                            <option value="3">3 - Average</option>
+                            <option value="2">2 - Poor</option>
+                            <option value="1">1 - Terrible</option>
+                        </select>
+                        <br><br>
+
+                        <label for="reviewText">Your Review:</label><br>
+                        <textarea id="reviewText" name="review" rows="3" cols="40" placeholder="Tell us about your experience..." required></textarea>
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>
