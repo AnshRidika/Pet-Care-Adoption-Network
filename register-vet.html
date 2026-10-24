@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Registration | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <!-- header  -->
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <h1>Pet Care & Adoption Network</h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- main content -->
+    <main>
+        <section>
+            <h2>Vet / Groomer Registration</h2>
+            <p>Register as a service provider. Your account will be active after the Platform Manager verifies your license.</p>
+
+           
+            <form action="#" method="POST">
+                
+                
+                <fieldset>
+                    <legend>Account Credentials</legend>
+                    
+                    
+                    <label for="vetName">Full Name:</label><br>
+                    <input type="text" id="vetName" name="fullName" placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="vetEmail">Email Address:</label><br>
+                    <input type="email" id="vetEmail" name="email" placeholder="example@mail.com" required>
+                    <br><br>
+
+                    <label for="vetPhone">Phone Number:</label><br>
+                    <input type="tel" id="vetPhone" name="phone" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    
+                    <label for="vetPassword">Password:</label><br>
+                    <input type="password" id="vetPassword" name="password" minlength="6" placeholder="Minimum 6 characters" required>
+                    <br><br>
+
+                    
+                    <label>Gender:</label><br>
+                    <input type="radio" id="vetMale" name="gender" value="Male" required>
+                    <label for="vetMale">Male</label>
+                    
+                    <input type="radio" id="vetFemale" name="gender" value="Female">
+                    <label for="vetFemale">Female</label>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Professional Details</legend>
+
+                    <label for="clinicName">Clinic / Shop Name:</label><br>
+                    <input type="text" id="clinicName" name="clinicName" placeholder="e.g. Happy Paws Clinic" required>
+                    <br><br>
+
+                    <label for="vetAddress">Clinic Address:</label><br>
+                    
+                    <textarea id="vetAddress" name="address" rows="3" cols="30" placeholder="Enter clinic address" required></textarea>
+                    <br><br>
+
+                   
+                    <label>Services Offered:</label><br>
+                    <input type="checkbox" id="servGroom" name="services" value="Grooming">
+                    <label for="servGroom">Grooming</label><br>
+
+                    <input type="checkbox" id="servVaccine" name="services" value="Vaccination">
+                    <label for="servVaccine">Vaccination</label><br>
+
+                    <input type="checkbox" id="servSurgery" name="services" value="Surgery">
+                    <label for="servSurgery">Surgery</label>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <fieldset>
+                    <legend>Verification Documents</legend>
+                    
+                    <label for="regNumber">Medical License Number:</label><br>
+                    <input type="text" id="regNumber" name="licenseNumber" placeholder="Enter your license number" required>
+                    <br><br>
+
+                    
+                    <label for="vetLicense">Upload Medical License (PDF or Image):</label><br>
+                    <input type="file" id="vetLicense" name="licenseDoc" accept=".pdf, image/*" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                
+                <button type="submit">Apply for Verification</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+            <br>
+            <hr>
+            
+            
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+            <p>Want to register a different role? <a href="register.html">Go back</a></p>
+
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- fotter -->
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
