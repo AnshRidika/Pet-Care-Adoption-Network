@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients | Pet Care & Adoption Network</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="50">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+       
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-dashboard.html#services">My Services</a></li>
+                 <li><a href="vet-calendar.html#availability & calendar">Availability & Calendar</a></li>
+                <li><a href="#history">Patient History</a></li>
+                <li><a href="#prescription">Prescriptions</a></li>
+                <li><a href="vet-dashboard.html#reviews">Client Reviews</a></li>
+                <li><a href="vet-dashboard.html#billing">Subscription & Billing</a></li>
+                <li><a href="donation.html#donation">Donation</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid black; height: 800px; margin: 0 10px;"></div>
+
+        <main style="flex: 1;">
+            <h1>Patient Records</h1>
+
+            
+            <section id="history">
+                <h2>Medical History</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Pet Name</th>
+                            <th>Owner</th>
+                            <th>Treatment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01 Jan 2026</td>
+                            <td>Bruno</td>
+                            <td>Rahim</td>
+                            <td>Rabies Vaccine</td>
+                        </tr>
+                        <tr>
+                            <td>15 Mar 2026</td>
+                            <td>Mitu</td>
+                            <td>Sadia</td>
+                            <td>Deworming</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="prescription">
+                <h2>Upload Prescription / Treatment Note</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>New Medical Entry</legend>
+                        
+                        <label for="selectPatient">Select Patient:</label><br>
+                        <select id="selectPatient" name="patient" required>
+                            <option value="" disabled selected>-- Choose Patient --</option>
+                            <option value="bruno">Bruno (Owner: Rahim)</option>
+                            <option value="mitu">Mitu (Owner: Sadia)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="treatmentNotes">Treatment Notes & Medicines:</label><br>
+                        <textarea id="treatmentNotes" name="notes" rows="4" cols="40" placeholder="Enter diagnosis and prescribed medicines..." required></textarea>
+                        <br><br>
+
+                        <label for="prescriptionFile">Upload Scanned Prescription (Optional):</label><br>
+                        <input type="file" id="prescriptionFile" name="prescription" accept=".pdf, image/*">
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Save Record</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer><p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p></footer>
+</body>
+</html>
