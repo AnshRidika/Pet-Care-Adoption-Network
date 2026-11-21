@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifications | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network (Admin)</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html">Verifications</a></li>
+                <li><a href="manager-reports.html">Abuse Reports</a></li>
+                <li><a href="manager-modify.html">Moderation</a></li>
+                <li><a href="manager-broadcast.html">Broadcast Alerts</a></li>
+                <li><a href="manager-health.html">System Health</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        <main style="flex: 1;">
+            <h1>Pending Verifications</h1>
+            <p>Review licenses and certificates submitted by Vets and Shelters. Approved users will be able to operate on the platform.</p>
+
+            
+            <section>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Applicant Name</th>
+                            <th>Role</th>
+                            <th>Document Provided</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. Salam</td>
+                            <td>Vet / Groomer</td>
+                            
+                            <td><a href="#">View Medical License</a></td>
+                            <td>
+                                
+                                <button type="button" onclick="approveUser('Dr. Salam')">Approve</button>
+                                <button type="button" onclick="rejectUser('Dr. Salam')">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paws Rescue</td>
+                            <td>Shelter / NGO</td>
+                            <td><a href="#">View NGO Certificate</a></td>
+                            <td>
+                                <button type="button" onclick="approveUser('Paws Rescue')">Approve</button>
+                                <button type="button" onclick="rejectUser('Paws Rescue')">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Ahmed</td>
+                            <td>Vet / Groomer</td>
+                            <td><a href="#">View Medical License</a></td>
+                            <td>
+                                <button type="button" onclick="approveUser('Dr. Ahmed')">Approve</button>
+                                <button type="button" onclick="rejectUser('Dr. Ahmed')">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="manager-verify.js"></script>
+</body>
+</html>

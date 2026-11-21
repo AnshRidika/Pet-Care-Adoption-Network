@@ -1,0 +1,368 @@
+body > div:not([style*="position: fixed"]) 
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 0 40px;
+    max-width: 1400px;
+    width: 100%;
+    flex: 1;
+}
+
+body > div > div[style*="border-left"] 
+{
+    display: none;
+}
+
+body > div > nav 
+{
+    width: 250px !important; 
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+body > div > nav h3 
+{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+body > div > nav ul 
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body > div > nav ul li a 
+{
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: var(--text-dark);
+    background: var(--white);
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+body > div > nav ul li a:hover 
+{
+    background: var(--primary-hover);
+    color: var(--white);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.4);
+}
+
+body > div > nav ul li a:active 
+{
+    background: var(--primary-color);
+    transform: translateX(5px) scale(0.98);
+    box-shadow: inset 0 3px 8px rgba(0,0,0,0.3);
+}
+
+main 
+{
+    flex: 1 !important;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    min-height: 80vh;
+    overflow-x: auto; 
+}
+
+main h1 
+{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+main > p 
+{
+    color: #666;
+    margin-bottom: 30px;
+}
+
+main h2 
+{
+    color: var(--text-dark);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+table 
+{
+    width: 100% !important; 
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: none !important; 
+}
+
+table th 
+{
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    border: none !important;
+    white-space: nowrap;
+}
+
+table td 
+{
+    padding: 15px;
+    border-bottom: 1px solid #eee !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--text-dark);
+    vertical-align: middle;
+}
+
+table tr:nth-child(even) 
+{
+    background-color: #f9f9f9;
+}
+
+table tr:hover 
+{
+    background-color: #f1e6fa;
+}
+
+table a 
+{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+table a:hover 
+{
+    text-decoration: underline;
+}
+
+table td:has(button)
+ {
+    white-space: nowrap;
+}
+
+table td button 
+{
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin: 2px 4px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: var(--white);
+    box-shadow: 0 2px 5px rgba(102, 51, 153, 0.2);
+    vertical-align: middle;
+}
+
+table td button:hover
+ {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(102, 51, 153, 0.4);
+}
+
+table td button:last-child 
+{
+    background: #95a5a6;
+    box-shadow: 0 2px 5px rgba(149, 165, 166, 0.2);
+}
+table td button:last-child:hover {
+    background: #7f8c8d;
+    box-shadow: 0 4px 10px rgba(149, 165, 166, 0.4);
+}
+
+
+fieldset 
+{
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    background: var(--white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+legend 
+{
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+label 
+{
+    font-weight: 600;
+    color: var(--text-dark);
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+form input[type="radio"] + label 
+{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select,
+textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fdfdfd;
+    font-family: inherit;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+input:focus, select:focus, textarea:focus
+ {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 51, 153, 0.2);
+    background: #fff;
+}
+
+input[type="radio"] 
+{
+    margin-right: 5px;
+    accent-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+form br 
+{
+    display: none;
+}
+button[type="submit"], main > section > a > button 
+{
+    padding: 12px 30px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 51, 153, 0.3);
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+button[type="submit"]:hover, main > section > a > button:hover 
+{
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 51, 153, 0.5);
+    background: linear-gradient(135deg, var(--primary-hover), var(--primary-color));
+}
+
+main > section > p 
+{
+    background: var(--white);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.05rem;
+}
+
+main > section > p strong 
+{
+    color: var(--primary-color);
+}
+
+main > section > p:has(button) 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+
+main > section > p:has(button) button 
+{
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 51, 153, 0.3);
+    display: inline-block;
+    margin: 0 !important;
+}
+
+main > section > p:has(button) button:hover 
+{
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 51, 153, 0.5);
+    background: linear-gradient(135deg, var(--primary-hover), var(--primary-color));
+}
+
+main > section > p:has(button) a
+ {
+    text-decoration: none;
+}

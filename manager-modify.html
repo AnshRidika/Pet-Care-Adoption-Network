@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Moderation | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network (Admin)</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+       
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html">Verifications</a></li>
+                <li><a href="manager-reports.html">Abuse Reports</a></li>
+                <li><a href="manager-modify.html">Moderation</a></li>
+                <li><a href="manager-broadcast.html">Broadcast Alerts</a></li>
+                <li><a href="manager-health.html">System Health</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Content Moderation</h1>
+            <p>Review flagged reviews, listings, and photos. Remove inappropriate content to keep the platform safe.</p>
+
+           
+            <section>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date Flagged</th>
+                            <th>Content Type</th>
+                            <th>Content Snippet</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14 Oct 2026</td>
+                            <td>Review (by User #4021)</td>
+                            <td>"This vet is a complete scam and a thief..."</td>
+                            <td>
+                                <button type="button" onclick="removeContent('Review')">Remove Review</button>
+                                <button type="button" onclick="ignoreFlag()">Ignore</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13 Oct 2026</td>
+                            <td>Listing (by Happy Paws)</td>
+                            <td>"Free purebred puppies!! Click here to pay deposit..."</td>
+                            <td>
+                                <button type="button" onclick="removeContent('Listing')">Remove Listing</button>
+                                <button type="button" onclick="ignoreFlag()">Ignore</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11 Oct 2026</td>
+                            <td>Photo (by User #5022)</td>
+                            <td>[Flagged inappropriate image upload]</td>
+                            <td>
+                                <button type="button" onclick="removeContent('Photo')">Remove Photo</button>
+                                <button type="button" onclick="ignoreFlag()">Ignore</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="manager-modify.js"></script>
+
+</body>
+</html>

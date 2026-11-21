@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuse Reports | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network (Admin)</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+      
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html">Verifications</a></li>
+                <li><a href="manager-reports.html">Abuse Reports</a></li>
+                <li><a href="manager-modify.html">Moderation</a></li>
+                <li><a href="manager-broadcast.html">Broadcast Alerts</a></li>
+                <li><a href="manager-health.html">System Health</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+       
+        <main style="flex: 1;">
+            <h1>Abuse & Cruelty Reports</h1>
+            <p>Review reports filed against users or organizations. Take strict action against violations of platform rules.</p>
+
+            
+            <section>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date Reported</th>
+                            <th>Reported User</th>
+                            <th>Role</th>
+                            <th>Reason for Report</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12 Oct 2026</td>
+                            <td>User #4021 (Rahim)</td>
+                            <td>Pet Owner</td>
+                            <td>Animal Neglect</td>
+                            <td>
+                                
+                                <button type="button" onclick="banUser('User #4021')">Ban Owner</button>
+                                <button type="button" onclick="dismissReport('User #4021')">Dismiss</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10 Oct 2026</td>
+                            <td>Fake Vet Clinic</td>
+                            <td>Vet</td>
+                            <td>Fake License / Scam</td>
+                            <td>
+                                
+                                <button type="button" onclick="banUser('Fake Vet Clinic')">Ban Vet</button>
+                                <button type="button" onclick="dismissReport('Fake Vet Clinic')">Dismiss</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>08 Oct 2026</td>
+                            <td>Bad Shelter NGO</td>
+                            <td>Shelter</td>
+                            <td>Mistreating Animals</td>
+                            <td>
+                                
+                                <button type="button"  onclick="banUser('Bad Shelter NGO')">Ban Shelter</button>
+                                <button type="button" onclick="dismissReport('Bad Shelter NGO')">Dismiss</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="manager-reports.js"></script>
+
+</body>
+</html>

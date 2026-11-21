@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Health | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network (Admin)</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html">Verifications</a></li>
+                <li><a href="manager-reports.html">Abuse Reports</a></li>
+                <li><a href="manager-modify.html">Moderation</a></li>
+                <li><a href="manager-broadcast.html">Broadcast Alerts</a></li>
+                <li><a href="manager-health.html">System Health</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>System Health & Alerts</h1>
+            <p>Monitor the technical status of the platform infrastructure.</p>
+
+            
+            <section>
+                <h2>Current System Status</h2>
+                
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Status</th>
+                            <th>Last Checked</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Server (Apache/Nginx)</td>
+                            <td>Online (All Systems Operational)</td>
+                            <td>Just now</td>
+                        </tr>
+                        <tr>
+                            <td>Database Server (MySQL)</td>
+                            <td>Connected</td>
+                            <td>Just now</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Gateway (SSLCommerz)</td>
+                            <td>Online</td>
+                            <td>Just now</td>
+                        </tr>
+                        <tr>
+                            <td>Email / SMS API</td>
+                            <td>Online</td>
+                            <td>Just now</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section>
+                <h2>Recent System Logs</h2>
+                <p>Errors and warnings logged by the server.</p>
+                
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:45 AM</td>
+                            <td>Info</td>
+                            <td>Database backup completed successfully.</td>
+                        </tr>
+                        <tr>
+                            <td>09:12 AM</td>
+                            <td>Warning</td>
+                            <td>High traffic volume detected. Server load at 85%.</td>
+                        </tr>
+                        <tr>
+                            <td>08:30 AM</td>
+                            <td>Info</td>
+                            <td>SSLCommerz API handshake successful.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

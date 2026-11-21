@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadcast Alerts | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network (Admin)</strong>
+        </div>
+        <nav>
+            <span>Welcome, Platform Manager | </span>
+            <a href="manager-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="manager-dashboard.html">Dashboard</a></li>
+                <li><a href="manager-verify.html">Verifications</a></li>
+                <li><a href="manager-reports.html">Abuse Reports</a></li>
+                <li><a href="manager-modify.html">Moderation</a></li>
+                <li><a href="manager-broadcast.html">Broadcast Alerts</a></li>
+                <li><a href="manager-health.html">System Health</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Broadcast Emergency Alert</h1>
+            <p>Send an urgent message to all users. This will appear as a pop-up alert on their dashboards the next time they log in.</p>
+
+            
+            <section>
+                <form action="#" method="POST" onsubmit="return validateBroadcast()" novalidate>
+                    <fieldset>
+                        <legend>Alert Details</legend>
+                        
+                        <label for="alertType">Alert Category:</label><br>
+                        <select id="alertType" name="alertType" required>
+                            <option value="disease">Disease Outbreak (e.g., Rabies alert)</option>
+                            <option value="weather">Severe Weather Warning (e.g., Cyclone)</option>
+                            <option value="system">System Maintenance Downtime</option>
+                            <option value="lost">Mass Lost Pet Alert</option>
+                        </select>
+                        <br><br>
+
+                        <label for="alertUrgency">Urgency Level:</label><br>
+                        <input type="radio" id="urgencyHigh" name="urgency" value="high" required checked>
+                        <label for="urgencyHigh">High (Red Banner)</label><br>
+                        
+                        <input type="radio" id="urgencyNormal" name="urgency" value="normal">
+                        <label for="urgencyNormal">Normal (Blue Banner)</label>
+                        <br><br>
+
+                        <label for="alertMessage">Message:</label><br>
+                        <textarea id="alertMessage" name="message" rows="4" placeholder="Type the urgent message here..." required></textarea>
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+                    <button type="submit">Send Broadcast Now</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="manager-broadcast.js"></script>
+
+</body>
+</html>
