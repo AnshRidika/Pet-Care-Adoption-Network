@@ -1,0 +1,129 @@
+:root 
+{
+    --primary-color: #663399; /* AIUB Purple */
+    --primary-hover: #8e44ad; /* Lighter Purple */
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+    --white: #ffffff;
+    --glow-color: rgba(255, 255, 255, 0.8); /* White glow for text/logo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body 
+{
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-attachment: fixed; 
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header 
+{
+    background: linear-gradient(90deg, #663399 0%, #8e44ad 100%);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header > div 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img 
+{
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+header img:hover 
+{
+    box-shadow: 0 0 20px var(--glow-color), 0 0 30px var(--primary-hover);
+    transform: scale(1.05);
+}
+
+header h1, header strong 
+{
+    color: var(--white);
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+header nav 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a, header nav span 
+{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover 
+{
+    text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--white);
+    transform: translateY(-1px);
+}
+
+hr {
+    display: none;
+}
+
+footer 
+{
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #8e44ad 0%, #663399 100%);
+    color: var(--text-light);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+}
+
+footer p 
+{
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+footer a 
+{
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+footer a:hover 
+{
+    text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--white);
+    color: var(--white);
+}
