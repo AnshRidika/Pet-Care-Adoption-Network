@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+       
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Book an Appointment</h1>
+            
+            
+            <section>
+                <h2>1. Find a Vet or Clinic</h2>
+                <form action="#" method="GET">
+                    <label for="searchProvider">Search by Doctor or Clinic Name:</label><br>
+                    <input list="vetSuggestions" id="searchProvider" name="search" placeholder="Type a name..." required>
+                    <datalist id="vetSuggestions">
+                        <option value="Dr. Karim (Dhanmondi Pet Clinic)">
+                        <option value="Dr. Salam (Mirpur Animal Hospital)">
+                        <option value="Happy Paws Clinic (Uttara)">
+                        <option value="Dr. Ahmed (Gulshan Vet Center)">
+                    </datalist>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <hr>
+
+            
+            <section>
+                <h2>2. Select an Available Slot</h2>
+                <p><strong>Dr. Karim (Dhanmondi Pet Clinic)</strong> - October 2026</p>
+                
+                <table border="1" cellpadding="15" style="border-collapse: collapse; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13<br><br>
+                                <a href="owner-book-confirm.html"><button type="button">10:00 AM - 10:30 AM</button></a>
+                            </td>
+                            <td>14<br><br>
+                                <a href="owner-book-confirm.html"><button type="button">10:00 AM - 10:30 AM</button></a><br><br>
+                                <a href="owner-book-confirm.html"><button type="button">2:00 PM - 2:30 PM</button></a>
+                            </td>
+                            <td>15<br><br>
+                                <a href="owner-book-confirm.html"><button type="button">10:00 AM - 10:30 AM</button></a>
+                            </td>
+                            <td>16<br><br><strong>FULL</strong></td>
+                            <td>17<br><br>
+                                <a href="owner-book-confirm.html"><button type="button">11:00 AM - 11:30 AM</button></a>
+                            </td>
+                            <td>18<br><br><strong>Not Availabe</strong></td>
+                            <td>19<br><br>
+                                <a href="owner-book-confirm.html"><button type="button">10:00 AM - 10:30 AM</button></a><br><br>
+                                <a href="owner-book-confirm.html"><button type="button">2:00 PM - 2:30 PM</button></a>
+                                
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+   <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

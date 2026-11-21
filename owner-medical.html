@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+       
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Medical Records</h1>
+            <p>View the vaccination and treatment history for your pets. Only the 10 most recent records are shown below.</p>
+
+           
+            <section>
+                <h3>Search Records</h3>
+                <form action="#" method="GET">
+                    <label for="searchRecord">Search by Pet or Treatment:</label>
+                    <input type="text" id="searchRecord" name="search" placeholder="e.g. Bruno, Rabies">
+                    
+                    <label for="filterDate">Show Records From:</label>
+                    <select id="filterDate" name="dateFilter">
+                        <option value="recent">Recent (Last 6 Months)</option>
+                        <option value="2025">Year 2025</option>
+                        <option value="all">All Time (Show Archived)</option>
+                    </select>
+
+                    <label for="filterDate">Filter by Exact Date:</label>
+                    <input type="date" id="filterDate" name="dateFilter">
+                    
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <hr>
+
+           
+            <section>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Pet</th>
+                            <th>Treatment / Vaccine</th>
+                            <th>Prescribed By</th>
+                            <th>Prescription Document</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>01 Jan 2026</td>
+                            <td>Bruno</td>
+                            <td>Rabies Vaccine</td>
+                            <td>Dr. Karim</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>15 Mar 2026</td>
+                            <td>Mitu</td>
+                            <td>Deworming</td>
+                            <td>Dr. Salam</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>10 May 2026</td>
+                            <td>Bruno</td>
+                            <td>General Checkup</td>
+                            <td>Dr. Karim</td>
+                            <td>No Document</td>
+                        </tr>
+                         
+                        <tr>
+                            <td>20 Jun 2026</td>
+                            <td>Mitu</td>
+                            <td>Flea Treatment</td>
+                            <td>Dr. Salam</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>05 Aug 2026</td>
+                            <td>Bruno</td>
+                            <td>Allergy Medication</td>
+                            <td>Dr. Karim</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>12 Sep 2026</td>
+                            <td>Mitu</td>
+                            <td>Vaccine Booster</td>
+                            <td>Dr. Salam</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>01 Oct 2026</td>
+                            <td>Bruno</td>
+                            <td>Dental Cleaning</td>
+                            <td>Dr. Karim</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                       
+                        <tr>
+                            <td>15 Oct 2026</td>
+                            <td>Mitu</td>
+                            <td>Ear Infection</td>
+                            <td>Dr. Salam</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                       
+                        <tr>
+                            <td>22 Oct 2026</td>
+                            <td>Bruno</td>
+                            <td>Weight Check</td>
+                            <td>Dr. Karim</td>
+                            <td>No Document</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>01 Nov 2026</td>
+                            <td>Mitu</td>
+                            <td>Annual Checkup</td>
+                            <td>Dr. Salam</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+     <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

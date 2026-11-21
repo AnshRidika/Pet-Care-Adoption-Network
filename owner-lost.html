@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Pet Alert | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Post a Lost Pet Alert</h1>
+            <p>If your pet is missing, please fill out this form immediately. It will be posted to the public board to alert the community.</p>
+
+            <form action="#" method="POST" onsubmit="return validateLostPet()" enctype="multipart/form-data" novalidate>
+                
+                <fieldset>
+                    <legend>Pet Details</legend>
+                    
+                    <label for="petName">Pet Name:</label><br>
+                    <input type="text" id="petName" name="petName" placeholder="e.g. Bruno" required>
+                    <br><br>
+
+                    <label for="petBreed">Breed / Species:</label><br>
+                    <input type="text" id="petBreed" name="petBreed" placeholder="e.g. Labrador (Dog)" required>
+                    <br><br>
+
+                    <label for="petDescription">Distinguishing Features:</label><br>
+                    <textarea id="petDescription" name="petDescription" rows="3" placeholder="e.g. Wearing a red collar, very friendly..." required></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Lost Details</legend>
+
+                    <label for="lostLocation">Last Seen Location:</label><br>
+                    <input type="text" id="lostLocation" name="lostLocation" placeholder="e.g. Road 27, Dhanmondi" required>
+                    <br><br>
+
+                    <label for="lostDate">Date Lost:</label><br>
+                    <input type="date" id="lostDate" name="lostDate" required>
+                    <br><br>
+
+                    <label for="contactNumber">Contact Number:</label><br>
+                    <input type="number" id="contactNumber" name="contactNumber" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    <label for="petPhoto">Upload Recent Photo:</label><br>
+                    <input type="file" id="petPhoto" name="petPhoto" accept="image/*" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+                
+                <button type="submit">Post Alert to Public Board</button>
+                <a href="owner-dashboard.html"><button type="button">Cancel</button></a>
+
+            </form>
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="owner-lost-adopt.js"></script>
+
+</body>
+</html>

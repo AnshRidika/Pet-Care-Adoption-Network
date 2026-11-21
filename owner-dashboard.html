@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png"  width="40" >
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Rahim | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+            </ul>
+        </nav>
+                        
+        
+
+        
+        <div style="border-left: 1px solid #ccc;"></div>
+
+       
+        <main style="flex: 1;">
+            <h1>Welcome Back, Tanban!</h1>
+            <p>Here is a quick summary of your account.</p>
+
+            
+            <section>
+                <h2>Quick Overview</h2>
+                <div>
+                    <p><strong>My Pets:</strong> 2</p>
+                    <p><strong>Upcoming Appointments:</strong> 1</p>
+                    <p><strong>Active Lost Alerts:</strong> 0</p>
+                </div>
+            </section>
+
+            <hr>
+
+           
+            <section>
+                <h2>My Pets</h2>
+                
+                <article>
+                    <img src="bruno.jpg" alt="Bruno" width="150" height="150">
+                    <h3>Bruno </h3>
+                    <p>Breed: Labrador | Age: 3 Years | Weight: 28kg </p>
+                    <a href="owner-medical.html"><button type="button">View Records</button></a>
+                </article>
+                <article>
+                    <img src="mithi cat.jpg"  width="150" height="150">
+                    <h3>Mitu </h3>
+                    <p>Breed: Persian | Age: 1 Year | Weight: 4kg</p>
+                    <a href="owner-medical.html"><button type="button">View Records</button></a>
+                </article>
+            </section>
+            
+            <hr>
+
+            
+            <section>
+                <h2>Upcoming Appointments</h2>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Provider</th>
+                            <th>Pet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 Oct 2026</td>
+                            <td>Dr. Karim</td>
+                            <td>Bruno</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <a href="owner-book.html"><button type="button">+ Book New Appointment</button></a>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

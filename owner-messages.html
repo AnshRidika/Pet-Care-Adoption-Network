@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+       
+        <main style="flex: 1;">
+            <h1>Messages & Reviews</h1>
+            <p>Contact vets, shelters, or leave a review for their services.</p>
+
+            
+            <section>
+                <h2>Send a Message</h2>
+                
+                <form action="#" method="POST" onsubmit="return validateMessage()">
+                    <fieldset>
+                        <legend>Compose Message</legend>
+                        
+                        <label for="messageTo">To (Vet or Shelter):</label><br>
+                        <input list="providerSuggestions" id="messageTo" name="recipient" placeholder="Search name..." required>
+                        <datalist id="providerSuggestions">
+                            <option value="Dr. Karim (Dhanmondi Pet Clinic)">
+                            <option value="Dr. Salam (Mirpur Animal Hospital)">
+                            <option value="Happy Paws Shelter (Mirpur)">
+                            <option value="Paws Rescue (Uttara)">
+                        </datalist>
+                        <br><br>
+
+                        <label for="messageBody">Message:</label><br>
+                        <textarea id="messageBody" name="messageBody" rows="4" placeholder="Type your message here..." required></textarea>
+                        <br><br>
+
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <hr>
+
+            
+            <section>
+                <h2>Leave a Review</h2>
+                <p>Your feedback helps other pet owners find the best care.</p>
+                
+                <form action="#" method="POST" onsubmit="return validateReview()">
+                    <fieldset>
+                        <legend>Submit Feedback</legend>
+                        
+                        <label for="reviewTarget">Who are you reviewing?</label><br>
+                        <input list="providerSuggestions" id="messageTo" name="recipient" placeholder="Search name..." required>
+                        <datalist id="providerSuggestions">
+                            <option value="Dr. Karim (Dhanmondi Pet Clinic)">
+                            <option value="Dr. Salam (Mirpur Animal Hospital)">
+                            <option value="Happy Paws Shelter (Mirpur)">
+                            <option value="Paws Rescue (Uttara)">
+                        </datalist>
+                        <br><br>
+
+                        <label for="rating">Rating (1 to 5):</label><br>
+                        <select id="rating" name="rating" required>
+                            <option value="5">5 (Excellent)</option>
+                            <option value="4">4 (Good)</option>
+                            <option value="3">3 (Average)</option>
+                            <option value="2">2 (Poor)</option>
+                            <option value="1">1 (Terrible)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="reviewText">Your Review:</label><br>
+                        <textarea id="reviewText" name="reviewText" rows="3" placeholder="Tell us about your experience..." required></textarea>
+                        <br><br>
+
+                        <button type="submit">Submit Review</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="owner-messages.js"></script>
+
+</body>
+</html>

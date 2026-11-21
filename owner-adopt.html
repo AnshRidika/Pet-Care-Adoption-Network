@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        <main style="flex: 1;">
+            <h1>Apply to Adopt a Pet</h1>
+            <p>Found a furry friend you want to bring home? Fill out this application. The shelter will review your details and contact you soon.</p>
+
+            
+            <form action="#" method="POST" onsubmit="return validateApplication()" novalidate>
+                
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    
+                    <label for="appName">Full Name:</label><br>
+                    <input type="text" id="appName" name="appName" placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="appPhone">Phone Number:</label><br>
+                    <input type="tel" id="appPhone" name="appPhone" placeholder="01XXXXXXXXX" required>
+                    <br><br>
+
+                    <label for="appAddress">Full Address:</label><br>
+                    <textarea id="appAddress" name="appAddress" rows="3" placeholder="Enter your full address (House, Road, Area, City)" required></textarea>
+                    <br><br>
+
+                    <label for="appReason">Why do you want to adopt? (Purpose of adoption)</label><br>
+                    <textarea id="appReason" name="appReason" rows="4" placeholder="Tell us about your home environment, experience with pets, and why you want to adopt..." required></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+                
+                <button type="submit">Submit Application</button>
+                <a href="public.html"><button type="button">Cancel</button></a>
+
+            </form>
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    
+    
+    <script src="owner-adopt.js"></script>
+
+</body>
+</html>

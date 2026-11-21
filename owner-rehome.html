@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehome | Pet Owner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Tanban | </span>
+            <a href="owner-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="owner-dashboard.html">Dashboard</a></li>
+                <li><a href="owner-pets.html">My Pets</a></li>
+                <li><a href="owner-medical.html">Medical Records</a></li>
+                <li><a href="owner-book.html">Book Appointment</a></li>
+                <li><a href="owner-lost.html">Lost Pet Alert</a></li>
+                <li><a href="owner-adopt.html">Adopt a Pet</a></li>
+                <li><a href="owner-rehome.html">Rehome a Pet</a></li>
+                <li><a href="owner-messages.html">Messages & Review</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>List a Pet for Adoption</h1>
+            <p>If you can no longer care for your pet, you can safely rehome them here. Your listing will be visible to verified shelters and adopters on the public page.</p>
+
+            <form action="#" method="POST" onsubmit="return validateAdopt()" enctype="multipart/form-data" novalidate>
+                
+                <fieldset>
+                    <legend>Pet Details</legend>
+                    
+                    <label for="petName">Pet Name:</label><br>
+                    <input type="text" id="petName" name="petName" placeholder="e.g. Rocky" required>
+                    <br><br>
+
+                    <label for="petBreed">Breed / Species:</label><br>
+                    <input type="text" id="petBreed" name="petBreed" placeholder="e.g. Golden Retriever (Dog)" required>
+                    <br><br>
+
+                    <label for="petAge">Age (Years):</label><br>
+                    <input type="number" id="petAge" name="petAge" min="0" required>
+                    <br><br>
+
+                    <label for="petGender">Gender:</label><br>
+                    <input type="radio" id="genderMale" name="petGender" value="Male" required>
+                    <label for="genderMale">Male</label>
+                    
+                    <input type="radio" id="genderFemale" name="petGender" value="Female">
+                    <label for="genderFemale">Female</label>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Rehoming Information</legend>
+
+                    <label for="rehomeReason">Reason for Rehoming:</label><br>
+                    <textarea id="rehomeReason" name="rehomeReason" rows="3" placeholder="e.g. Moving to a new country, allergies..." required></textarea>
+                    <br><br>
+
+                    <label for="petHealth">Current Health Status:</label><br>
+                    <select id="petHealth" name="petHealth" required>
+                        <option value="" disabled selected>-- Select Status --</option>
+                        <option value="healthy">Healthy & Vaccinated</option>
+                        <option value="needs_care">Needs Medical Attention</option>
+                    </select>
+                    <br><br>
+
+                    <label for="petPhoto">Upload Pet Photo:</label><br>
+                    <input type="file" id="petPhoto" name="petPhoto" accept="image/*" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+                
+                <button type="submit">Publish Listing</button>
+                <a href="owner-dashboard.html"><button type="button">Cancel</button></a>
+
+            </form>
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="owner-lost-adopt.js"></script>
+
+</body>
+</html>
