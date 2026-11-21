@@ -1,0 +1,158 @@
+
+main 
+{
+    margin: 40px auto;
+    max-width: 800px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    flex: none !important; 
+}
+
+main section 
+{
+    text-align: center;
+}
+
+main section h2 
+{
+    border-bottom: none;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+main section p 
+{
+    color: #555;
+    margin-bottom: 30px;
+}
+
+main section form 
+{
+    text-align: left;
+}
+
+fieldset 
+{
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    background: var(--white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+legend 
+{
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: -10px; 
+}
+
+
+label
+{
+    font-weight: 600;
+    color: var(--text-dark);
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fdfdfd;
+    font-family: inherit;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+input:focus 
+{
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 51, 153, 0.2);
+    background: #fff;
+}
+
+
+.form-checkbox-wrapper 
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"]#isAnonymous 
+{
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+    box-shadow: none !important;
+    flex-shrink: 0;
+}
+
+
+input[type="checkbox"]#isAnonymous + label 
+{
+    display: inline-block !important;
+    margin: 0 0 0 10px !important;
+    padding: 0 !important;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    width: auto !important;
+    font-size: 0.95rem;
+}
+
+button[type="submit"] 
+{
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-right: 0;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 51, 153, 0.3) !important;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover 
+{
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 51, 153, 0.5) !important;
+}
+
+form br 
+{
+    display: none;
+}
