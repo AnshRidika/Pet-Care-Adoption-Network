@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Applications | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shelter.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Happy Paws Shelter | </span>
+            <a href="shelter-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
+
+        
+        <nav style="width: 220px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="shelter-dashboard.html">Dashboard</a></li>
+                <li><a href="shelter-animals.html">Animals Adoption</a></li>
+                <li><a href="shelter-apps.html">Adoption Applications</a></li>
+                <li><a href="shelter-foster.html">Foster Homes</a></li>
+                <li><a href="shelter-medical.html">Medical Logs</a></li>
+                <li><a href="shelter-donations.html">Donations Summary</a></li>
+                <li><a href="shelter-success.html">Public Profile & Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        
+
+        
+        <main style="flex: 1;">
+            <h1>Adoption Applications</h1>
+            <p>Review applications from potential adopters. Approving an application will mark the animal as adopted.</p>
+
+           
+            <section>
+                <h2>Pending Applications</h2>
+                
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Applicant Name</th>
+                            <th>Animal</th>
+                            <th>Contact</th>
+                            <th>Date Applied</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rahim Uddin</td>
+                            <td>Bruno (Dog)</td>
+                            <td>017XXXXXXXX</td>
+                            <td>10 Oct 2026</td>
+                            <td>
+                                <a href="#review-section"><button type="button">Review</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sadia Islam</td>
+                            <td>Mithi (Cat)</td>
+                            <td>018XXXXXXXX</td>
+                            <td>12 Oct 2026</td>
+                            <td>
+                                <a href="#review-section"><button type="button">Review</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="review-section">
+                <h2>Review Application Details</h2>
+                <p>Reviewing: <strong>Rahim Uddin</strong> for <strong>Bruno (Dog)</strong></p>
+
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        
+                        <label for="appName">Applicant Name:</label><br>
+                        <input type="text" id="appName" name="appName" value="Rahim Uddin" readonly>
+                        <br><br>
+
+                        <label for="appPhone">Phone Number:</label><br>
+                        <input type="tel" id="appPhone" name="appPhone" value="017XXXXXXXX" readonly>
+                        <br><br>
+
+                        <label for="appAddress">Address:</label><br>
+                        <textarea id="appAddress" name="appAddress" rows="2" readonly>House 12, Road 5, Dhanmondi, Dhaka</textarea>
+                        <br><br>
+
+                        <label for="appReason">Why do you want to adopt?</label><br>
+                        <textarea id="appReason" name="appReason" rows="3" readonly>I have a large backyard and experience with Labradors. Looking for a companion.</textarea>
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+ 
+                        <p>Choose to approve or reject this application:</p>
+                        
+                        <button type="submit" value="approve">Approve Adoption</button>
+                        <button type="submit" value="reject">Reject Application</button>
+                        
+                    
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | <a href="public.html">Contact</a> | <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+
+</body>
+</html>
