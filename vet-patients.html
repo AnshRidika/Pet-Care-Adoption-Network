@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient History | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vet.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div  style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-services.html">My Services</a></li>
+                <li><a href="vet-calendar.html">Availability & Calendar</a></li>
+                <li><a href="vet-patients.html">Patient History</a></li>
+                <li><a href="vet-prescription.html">Prescriptions</a></li>
+                <li><a href="vet-messages.html">Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        <main style="flex: 1;">
+            <h1>Patient History</h1>
+            <p>Search and view the complete medical history of all pets treated at your clinic.</p>
+
+            
+            <section>
+                <h2>Search Patients</h2>
+                <form action="#" method="GET" onsubmit="return searchPatients()" novalidate>
+                    <label for="searchPatient">Search by Pet Name or Owner Name:</label>
+                    <input type="text" id="searchPatient" name="search" placeholder="e.g. Bruno or Rahim">
+                    
+
+                    <label for="filterSpecies">Filter by Species:</label>
+                    <select id="filterSpecies" name="species">
+                        <option value="all">All Species</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                        <option value="other">Other</option>
+                    </select>
+                  
+
+                    <button type="submit">Search</button>
+                    <button type="reset">Clear</button>
+                </form>
+            </section>
+
+            <hr>
+
+            
+            <section>
+                <h2>Recent Patients</h2>
+                <table id="recentPatientsTable" border="1" style="width: 100%; text-align: left; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Species / Breed</th>
+                            <th>Owner</th>
+                            <th>Last Visit</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bruno</td>
+                            <td>Dog (Labrador)</td>
+                            <td>Rahim Uddin</td>
+                            <td>15 Oct 2026</td>
+                            <td>
+                                <a href="#history-details"><button type="button">View History</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mithi</td>
+                            <td>Cat (Persian)</td>
+                            <td>Sadia Islam</td>
+                            <td>12 Oct 2026</td>
+                            <td>
+                                <a href="#history-details"><button type="button">View History</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tommy</td>
+                            <td>Dog (Beagle)</td>
+                            <td>Karim Ahmed</td>
+                            <td>02 Oct 2026</td>
+                            <td>
+                                <a href="#history-details"><button type="button">View History</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="history-details">
+                <h2>Medical History: Bruno (Owner: Rahim Uddin)</h2>
+                
+                <table border="1" style="width: 100%; text-align: left; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Treatment / Vaccine</th>
+                            <th>Notes</th>
+                            <th>Prescription</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 Oct 2026</td>
+                            <td>Vaccination</td>
+                            <td>Rabies booster shot administered.</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                        <tr>
+                            <td>10 Aug 2026</td>
+                            <td>General Checkup</td>
+                            <td>Healthy weight, mild ear infection treated.</td>
+                            <td>No Document</td>
+                        </tr>
+                        <tr>
+                            <td>01 Jan 2026</td>
+                            <td>Deworming</td>
+                            <td>Routine deworming tablet given.</td>
+                            <td><a href="#">View Prescription</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="vet-patients.js"></script>
+</body>
+</html>

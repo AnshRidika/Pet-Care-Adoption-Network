@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vet.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-services.html">My Services</a></li>
+                <li><a href="vet-calendar.html">Availability & Calendar</a></li>
+                <li><a href="vet-patients.html">Patient History</a></li>
+                <li><a href="vet-prescription.html">Prescriptions</a></li>
+                <li><a href="vet-messages.html">Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Messages</h1>
+            <p>Communicate directly with pet owners or rescue shelters regarding treatments and appointments.</p>
+
+            <section>
+                <h2>Send a Message</h2>
+                
+                <form action="#" method="POST" onsubmit="return validateMessage()" novalidate>
+                    <fieldset>
+                        <legend>Compose Message</legend>
+                        
+                        <label for="messageTo">To (Owner or Shelter):</label><br>
+                        
+                        <input list="contacts" id="messageTo" name="recipient" placeholder="Search name..." required>
+                        <datalist id="contacts">
+                            <option value="Rahim Uddin (Owner - Bruno)">
+                            <option value="Sadia Islam (Owner - Mithi)">
+                            <option value="Karim Ahmed (Owner - Tommy)">
+                            <option value="Happy Paws Shelter (Mirpur)">
+                            <option value="Paws Rescue (Uttara)">
+                        </datalist>
+                        <br><br>
+
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" placeholder="e.g. Follow-up on Bruno's vaccination" required>
+                        <br><br>
+
+                        <label for="messageBody">Message:</label><br>
+                        <textarea id="messageBody" name="messageBody" rows="5" placeholder="Type your message here..." required></textarea>
+                        <br><br>
+
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <hr>
+
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="vet-messages.js"></script>
+</body>
+</html>

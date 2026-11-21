@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescriptions | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vet.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-services.html">My Services</a></li>
+                <li><a href="vet-calendar.html">Availability & Calendar</a></li>
+                <li><a href="vet-patients.html">Patient History</a></li>
+                <li><a href="vet-prescription.html">Prescriptions</a></li>
+                <li><a href="vet-messages.html">Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Create a Prescription / Treatment Record</h1>
+            <p>Fill out this form to add a new medical record.</p>
+
+            <section>
+                <form action="#" method="POST" enctype="multipart/form-data" onsubmit="return validatePrescription()" novalidate>
+                    <fieldset>
+                        <legend>Patient Details</legend>
+                        
+                        <label for="selectPatient">Select Patient:</label><br>
+                        
+                        <select id="selectPatient" name="patientId" required>
+                            <option value="" disabled selected>-- Choose Patient --</option>
+                            <option value="bruno_101">Bruno (Owner: Rahim Uddin)</option>
+                            <option value="mithi_102">Mithi (Owner: Sadia Islam)</option>
+                            <option value="tommy_103">Tommy (Owner: Karim Ahmed)</option>
+                        </select>
+                        <br><br>
+
+                        <label for="visitDate">Date of Visit:</label><br>
+                        <input type="date" id="visitDate" name="visitDate" required>
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Treatment Details</legend>
+                        
+                        <label for="treatmentType">Treatment / Vaccine Name:</label><br>
+                        <input type="text" id="treatmentType" name="treatmentType" placeholder="e.g. Rabies Vaccine, Deworming" required>
+                        <br><br>
+
+                        <label for="dosage">Dosage / Medicine Details:</label><br>
+                        <input type="text" id="dosage" name="dosage" placeholder="e.g. 1 tablet daily for 5 days">
+                        <br><br>
+
+                        <label for="treatmentNotes">Clinical Notes / Diagnosis:</label><br>
+                        <textarea id="treatmentNotes" name="notes" rows="4" placeholder="Enter diagnosis, symptoms, and instructions for the owner..." required></textarea>
+                        <br><br>
+
+                        <label for="prescriptionFile">Upload Scanned Prescription (Optional PDF/Image):</label><br>
+                        <input type="file" id="prescriptionFile" name="prescriptionFile" accept=".pdf, image/*">
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+
+                    
+                    <button type="submit">Save Record & Notify Owner</button>
+                    <a href="vet-dashboard.html"><button type="button">Cancel</button></a>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="vet-prescription.js"></script>
+</body>
+</html>

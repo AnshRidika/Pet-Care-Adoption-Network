@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar & Availability | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vet.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Pet Care Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">View Website</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div  style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-services.html">My Services</a></li>
+                <li><a href="vet-calendar.html">Availability</a></li>
+                <li><a href="vet-patients.html">Patient History</a></li>
+                <li><a href="vet-prescription.html">Prescriptions</a></li>
+                <li><a href="vet-messages.html">Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>Schedule & Availability</h1>
+
+            
+            <section>
+                <h2>Current Status</h2>
+                <form action="#" method="POST">
+                    <input type="checkbox" id="acceptingPatients" name="acceptingPatients" checked>
+                    <label for="acceptingPatients">I am currently accepting new patients</label>
+                </form>
+            </section>
+
+            <hr>
+
+            <section id="calendar">
+                <h2>Appointment Calendar (October 2026)</h2>
+                <table border="1" style="text-align: center; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4 <br><small>(Bruno - 10AM) <br> (Mitu - 2PM)</small></td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15<br><small>(Bruno - 10AM)</small></td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20<br><small>(Mitu - 2PM)</small></td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            
+            <section id="update-form">
+                <h2>Update Availability for Next Month</h2>
+                <p>Set your recurring working hours. This will automatically generate available time slots on the calendar.</p>
+                
+                <form action="#" method="POST" onsubmit="return validateSchedule()" novalidate>
+                    <fieldset>
+                        <legend>Recurring Weekly Schedule</legend>
+                        
+                        <label for="scheduleStartDate">Apply Schedule From:</label><br>
+                        <input type="date" id="scheduleStartDate" name="startDate" required>
+                        <br><br>
+
+                        <label for="scheduleEndDate">Apply Schedule Until:</label><br>
+                        <input type="date" id="scheduleEndDate" name="endDate" required>
+                        <br><br>
+
+                        <label for="startTime">Start Time:</label><br>
+                        <input type="time" id="startTime" name="startTime" value="09:00" required>
+                        <br><br>
+
+                        <label for="endTime">End Time:</label><br>
+                        <input type="time" id="endTime" name="endTime" value="17:00" required>
+                        <br><br>
+
+                        <label for="availableDays">Select Days Available:</label><br>
+                        <input type="checkbox" id="mon" name="days[]" value="Monday">
+                        <label for="mon">Monday</label><br>
+                        <input type="checkbox" id="tue" name="days[]" value="Tuesday">
+                        <label for="tue">Tuesday</label><br>
+                        <input type="checkbox" id="wed" name="days[]" value="Wednesday">
+                        <label for="wed">Wednesday</label><br>
+                        <input type="checkbox" id="thu" name="days[]" value="Thursday">
+                        <label for="thu">Thursday</label><br>
+                        <input type="checkbox" id="fri" name="days[]" value="Friday">
+                        <label for="fri">Friday</label><br>
+                        <input type="checkbox" id="sat" name="days[]" value="Saturday">
+                        <label for="sat">Saturday</label><br>
+                       <input type="checkbox" id="sun" name="days[]" value="Sunday">
+                       <label for="sun">Sunday</label><br>
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Save & Generate Calendar</button>
+                </form>
+            </section>
+
+            <hr>
+
+            
+            <section id="emergency-form">
+                <h2>Declare Emergency</h2>
+                <p>If an emergency occurs, cancel your appointments for a specific day and notify the owners.</p>
+
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Emergency Details</legend>
+
+                        <label>Is this an emergency?</label><br>
+                        <input type="radio" id="isEmergency" name="emergencyStatus" value="yes" required checked>
+                        <label for="isEmergency">Yes, it is an emergency</label><br>
+                        
+                        <input type="radio" id="noEmergency" name="emergencyStatus" value="no">
+                        <label for="noEmergency">No, I just need to cancel</label>
+                        <br><br>
+
+                        <label for="emergencyDate">Date to Cancel:</label><br>
+                        <input type="date" id="emergencyDate" name="emergencyDate" required>
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+                    <button type="submit">Confirm Cancellation</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="vet-calendar.js"></script>
+</body>
+</html>

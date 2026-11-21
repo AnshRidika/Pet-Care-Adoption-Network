@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services | Pet Care & Adoption Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vet.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Diagonal Black Paw Print Trail.png" alt="Logo" width="40">
+            <strong>Pet Care & Adoption Network</strong>
+        </div>
+        <nav>
+            <span>Welcome, Dr. Karim | </span>
+            <a href="vet-dashboard.html">Dashboard</a> | 
+            <a href="public.html">Public Site</a> | 
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div style="display: flex; gap: 30px; margin-top: 20px;">
+
+        
+        <nav style="width: 200px;">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="vet-dashboard.html">Dashboard</a></li>
+                <li><a href="vet-services.html">My Services</a></li>
+                <li><a href="vet-calendar.html">Availability</a></li>
+                <li><a href="vet-patients.html">Patient History</a></li>
+                <li><a href="vet-prescription.html">Prescriptions</a></li>
+                <li><a href="vet-messages.html">Messages</a></li>
+                <li><a href="javascript:history.back()">← Go Back</a></li>
+            </ul>
+        </nav>
+
+        <div style="border-left: 1px solid #ccc;"></div>
+
+        
+        <main style="flex: 1;">
+            <h1>My Services & Pricing</h1>
+            <p>Manage the services offered at your clinic and their prices.</p>
+
+            
+            <section>
+               <h2>My Services & Pricing</h2>
+                <ul>
+                    <li><strong>General Checkup:</strong> ৳ 500</li>
+                    <li><strong>Vaccination:</strong> ৳ 800</li>
+                    <li><strong>Deworming:</strong> ৳ 300</li>
+                    <li><strong>Surgery (Minor):</strong> ৳ 2500</li>
+                </ul>
+                <a href="vet-editprice.html"> <button type="button">Edit Price</button></a>
+            </section>
+
+            <hr>
+
+            
+            <section>
+                <h2>Add a New Service</h2>
+                <p>Add a new treatment or service to your clinic's menu.</p>
+                
+                <form action="#" method="POST" onsubmit="return validateService()" novalidate>
+                    <fieldset>
+                        <legend>Service Details</legend>
+                        
+                        <label for="serviceName">Service Name:</label><br>
+                        <input type="text" id="serviceName" name="serviceName" placeholder="e.g. Dental Cleaning" required>
+                        <br><br>
+
+                        <label for="servicePrice">Price (BDT):</label><br>
+                        <input type="number" id="servicePrice" name="servicePrice" min="0" placeholder="e.g. 1500" required>
+                        <br><br>
+                    </fieldset>
+
+                    <br>
+                    <button type="submit">Add Service</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Pet Care & Adoption Network. All rights reserved.</p>
+        <p>
+            <a href="public.html">About Us</a> | 
+            <a href="public.html">Contact</a> | 
+            <a href="public.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="vet-services.js"></script>
+
+</body>
+</html>
